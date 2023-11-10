@@ -1,0 +1,13 @@
+#!/bin/sh -eux
+
+# Mongo installation requires systemd, so we have to do it on first
+# run instead of Containerfile. Packages have been predownloaded
+apt-get -y install unifi
+apt-get clean
+
+# Enable and start Unifi Network
+systemctl enable unifi
+systemctl start --no-block unifi
+
+# Remove me after running
+rm "$0"

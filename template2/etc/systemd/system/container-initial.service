@@ -1,0 +1,10 @@
+[Unit]
+Description=Finish Unifi and Mongo installation
+ConditionPathExists=/opt/container-initial
+
+[Service]
+Type=oneshot
+ExecStart=/opt/container-initial
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,2 @@
+deb [signed-by=/usr/share/keyrings/unifi-repo.gpg, arch=amd64] https://www.ui.com/downloads/unifi/debian stable ubiquiti
+deb [signed-by=/usr/share/keyrings/mongo-server-3.6.asc] https://repo.mongodb.org/apt/ubuntu bionic/mongodb-org/3.6 multiverse
