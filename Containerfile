@@ -15,8 +15,6 @@ COPY --chown=root:root template /
 RUN apt-get update
 RUN apt-get -y install --download-only unifi
 
-# TODO Merge template and template2 later
-COPY --chown=root:root template2 /
 RUN systemctl enable container-initial
 RUN systemctl set-default multi-user.target
 RUN systemctl mask console-getty
