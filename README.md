@@ -12,9 +12,10 @@ installation and maintenance is important. In summary:
 * Podman is used because its advanced network namespace features
 * Restore from Unifi backup file required in case of an update
 
-Therefore, the container is monolithic. No external MongoDB.  We don't
-use MongoDB in production, so Unifi is the only user of that MongoDB
-instance. We don't want to orchestrate stuff just to run Unifi.
+The container is monolithic. No external MongoDB.  We don't use
+MongoDB in production, so Unifi is the only user of that MongoDB
+instance. In short, we don't need an orchestra, we just want the Epic
+Sax Guy.
 
 This has a side effect, which is not anti-feature for us but might be
 to you: The database is throwaway and in case you recreate the
